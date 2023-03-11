@@ -12,7 +12,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className='bg-zinc-900 text-zinc-200'>
+        <div className='flex flex-col border-2 border-green-500 h-screen'>
+          <div className='border-2 border-red-500 flex flex-col'>TOP NAVIGATION</div>
+          <div className='flex border-2 border-blue-500 flex-1'>
+            <div className='border-2 border-orange-300'>SIDE NAVIGATION</div>
+            { children }
+          </div>
+        </div>
+      </body>
     </html>
   )
 }
