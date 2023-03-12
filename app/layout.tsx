@@ -15,9 +15,9 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className='bg-zinc-900 text-zinc-200'>
-				<div className='flex flex-col border-2 border-green-500 h-screen'>
+				<div className='flex flex-col h-screen'>
 					<TopNavigation />
-					<div className='flex border-2 border-blue-500 flex-1'>
+					<div className='flex flex-1'>
 						<SideNavigation />
 						{children}
 					</div>
